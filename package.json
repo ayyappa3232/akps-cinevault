@@ -1,0 +1,9 @@
+{
+  "name": "cinevault",
+  "private": true,
+  "scripts": {
+    "start": "node tools/serve.js",
+    "check": "node tools/check.js",
+    "format": "npx prettier --write ."
+  }
+}

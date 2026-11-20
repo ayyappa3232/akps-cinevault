@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>CineVault – Only the movies worth watching</title>
+    <meta name="theme-color" content="#0a0a0b" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="assets/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <button id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button
+      ><a href="#/home" class="brand">CINE<b>VAULT</b></a>
+      <input id="gsearch" type="search" placeholder="Search movies  ( / )" aria-label="Search movies" /><span
+        id="net"
+        class="net"
+        role="status"
+        >Online</span
+      >
+    </header>
+    <nav id="nav" aria-label="Main"></nav>
+    <div id="scrim"></div>
+    <nav id="tabs" aria-label="Quick">
+      <a href="#/home" data-k="home"><i>⌂</i>Home</a><a href="#/all" data-k="all"><i>▦</i>Movies</a
+      ><a href="#/discover" data-k="discover"><i>✦</i>Discover</a
+      ><a href="#/watchlist" data-k="watchlist"><i>＋</i>Watchlist</a
+      ><button id="moreBtn"><i>☰</i>More</button>
+    </nav>
+    <main id="main" tabindex="-1"></main>
+    <button id="cmpBar" hidden></button>
+    <div id="toast" role="status"></div>
+    <dialog id="dlg"></dialog>
+    <script src="movies.js"></script>
+    <script src="ui-select.js"></script>
+    <script src="storage.js"></script>
+    <script src="recommendations.js"></script>
+    <script src="tmdb.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
